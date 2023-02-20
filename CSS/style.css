@@ -1,0 +1,305 @@
+@import "./fonts.css";
+:root {
+    --bg: #151515;
+    --text: #fff;
+    --nav_bg: #282828;
+    --MB: "Montserrat-Bold";
+    --MM: "Montserrat-Medium";
+    --MR: "Montserrat-Regular";
+    --PO: "prosto__one";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/* header__top start */
+
+.header__top {
+    background-color: var(--nav_bg);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav__link {
+    font-family: var(--MB);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.header__nav-icons {
+    display: flex;
+    gap: 25px;
+}
+
+/* header__top end */
+
+
+/* header__bottom start */
+
+.header__bottom {
+    background: url(../IMG/bg__header.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+.bottom__content {
+    text-align: center;
+    padding: 204px 0 268px;
+}
+
+.bottom__title {
+    font-family: var(--PO);
+    font-weight: 400;
+    font-size: 100px;
+    color: var(--text);
+    padding-bottom: 40px;
+}
+
+.bottom__link {
+    font-family: var(--MM);
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--nav_bg);
+    background-color: var(--text);
+    border-radius: 10px;
+    padding: 13px 14px;
+    text-decoration: none;
+}
+
+.bottom__link i {
+    color: var(--nav_bg);
+    padding-left: 11px;
+}
+
+/* header__bottom end */
+
+
+/* details__comfort start */
+
+.details__comfort {
+    margin: 30px 0 50px;
+}
+
+.comfort__inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.comfort__text {
+    max-width: 538px;
+    width: 100%;
+    font-family: var(--MM);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text);
+    padding-top: 30px;
+}
+
+/* details__comfort end */
+
+
+/* charging__case start */
+
+.charging__case {
+    margin-bottom: 50px;
+}
+
+.case__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.case__text {
+    max-width: 540px;
+    width: 100%;
+    font-family: var(--MM);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text);
+}
+
+/* charging__case end */
+
+/* sensor__control start */
+
+.sensor__control {
+    margin-bottom: 80px;    
+}
+
+.control__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control__text-left {
+    max-width: 333px;
+    width: 100%;
+    font-family: var(--MB);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text);
+    text-align: end;
+    position: relative;
+}
+
+.control__text-left::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: block;
+    background-color: var(--text);
+    
+    position: absolute;
+    top: 50%;
+    left: 105%;
+}
+
+.control__text-right {
+    max-width: 333px;
+    width: 100%;
+    font-family: var(--MB);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text);
+    position: relative;
+}
+
+.control__text-right::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: block;
+    background-color: var(--text);
+    
+    position: absolute;
+    top: 50%;
+    right: 105%;
+}
+
+/* sensor__control end */
+
+
+/* phone__price start */
+
+.phone__price {
+    margin-bottom: 30px;
+
+}
+
+.price__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.price__card {
+    max-width: 255px;
+    width: 100%;
+    background: var(--text);
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.price__title {
+    padding-bottom: 10px;
+    font-family: var(--MB);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--bg);
+}
+
+.price__text {
+    padding: 10px 0 20px;
+    font-family: var(--MR);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+.price__link {
+    display: inline-block;
+    font-family: var(--MB);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px 57px;
+    text-transform: uppercase;
+    color: var(--text);
+    text-decoration: none;
+    background-color: var(--bg);
+}
+
+/* phone__price end */
+
+
+/* footer start */
+
+.footer{
+    background: var(--nav_bg);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__link {
+    font-family: var(--MB);
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.footer__icons {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__link-icon {
+    color: var(--text);
+    font-size: 65px;
+}
+
+/* footer end */
